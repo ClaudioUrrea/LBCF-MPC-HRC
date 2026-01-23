@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Paper](https://img.shields.io/badge/paper-Mathematics-green.svg)](https://www.mdpi.com/journal/mathematics)
 
-Official implementation of **"Probabilistic Safety Guarantees for Learned Control Barrier Functions: Theory and Application to Multi-Objective Human-Robot Collaborative Optimization"** (Mathematics, MDPI, 2025).
+Official implementation of **"Probabilistic Safety Guarantees for Learned Control Barrier Functions: Theory and Application to Multi-Objective Human-Robot Collaborative Optimization"** (Mathematics, MDPI, 2026).
 
 ---
 

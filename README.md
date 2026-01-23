@@ -69,46 +69,6 @@ This repository provides a complete implementation of the LBCF-MPC framework for
 
 ---
 
-## 🏗️ System Architecture
-
-![System Architecture](figures/system_architecture.png)
-
-**Figure 2:** LBCF-MPC system architecture showing the integration between CoppeliaSim simulation environment, Python control framework, and data logging. The control loop operates at 50Hz: (1) PyRep API extracts robot and human states from CoppeliaSim; (2) Neural CBF computes barrier values h(x) with Lipschitz-constrained networks; (3) Safety Monitor enforces ISO/TS 15066 compliance; (4) LBCF-MPC optimizer solves a constrained QP to generate safe control commands; (5) Adaptive weights enable multi-objective optimization; (6) Commands are sent back to the UR5 robot actuators.
-
-### System Components
-
-**Simulation Layer (Blue):**
-- CoppeliaSim physics engine with collision detection
-- UR5 robot model with accurate kinematics and dynamics
-- Human motion model with predictive trajectory estimation
-
-**Control Layer (Orange/Green/Pink):**
-- Neural CBF Module: Lipschitz-constrained neural network (PyTorch)
-- Safety Monitor: ISO/TS 15066 compliance checking
-- LBCF-MPC Optimizer: Constrained QP solver (CVXPY + OSQP)
-- Adaptive Weights: Multi-objective Pareto optimization
-
-**Data Layer (Purple):**
-- Experimental data logging (trajectories, barrier values, solve times)
-- HDF5 format for efficient storage and analysis
-
----
-
-## 📊 Method Comparison
-
-![Baseline Comparison](figures/Figure_1.png)
-
-**Figure 3:** Comparative analysis of safety-critical control methods. LBCF-MPC (proposed) achieves optimal balance across all metrics—99.8% safety (0 violations), baseline conservatism, highest hypervolume (0.798), and real-time feasibility (16.2ms). Baselines: (b) Manual CBF suffers from excessive conservatism (+52%) due to fixed geometry; (c) Safe-RL lacks formal guarantees (7 violations); (d) Fixed-Weight MPC exhibits poor Pareto exploration due to static weights.
-
-### Comparative Results
-
-| Method | Safety | Conservatism | Hypervolume | Solve Time |
-|--------|--------|--------------|-------------|------------|
-| **LBCF-MPC (Proposed)** | **99.8%** | **Baseline** | **0.798** | **16.2ms** |
-| Manual CBF | 99.8% | +52% ↑ | 0.657 | 15.2ms |
-| Safe-RL (PPO) | 99.9% (7 viol.) | +12% | 0.703 | N/A |
-| Fixed-Weight MPC | 99.8% | +52% ↑ | 0.657 | 18.4ms |
-
 **Key Insights:**
 - **LBCF-MPC** achieves zero violations with minimal conservatism
 - **Manual CBF** is safe but overly conservative (52% workspace reduction)
@@ -126,8 +86,9 @@ LBCF-MPC-HRC/
 ├── LICENSE                            # MIT License
 │
 ├── figures/                           # Documentation figures
-│   ├── Figure_1.png                   # Method comparison
-│   ├── system_architecture.png        # System diagram
+│   ├── Figure1_Timeseries_Comparison.png               
+│   ├── Figure2_Boxplot_Comparisons.png
+│   ├── Figure3_Enhanced_Comparison.png   
 │   └── workspace_overview.jpg         # Simulation environment
 │
 ├── src/                               # Source code

@@ -358,7 +358,7 @@ If you use this code in your research, please cite:
   volume={13},
   number={X},
   pages={XXX},
-  year={2025},
+  year={2026},
   publisher={MDPI},
   doi={10.3390/mathXXXXXXXX}
 }
@@ -418,6 +418,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Last Updated**: December 27, 2025
+**Last Updated**: January 25, 2026
 
 **Repository Status**: Active Development ✅

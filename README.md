@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Paper](https://img.shields.io/badge/paper-Mathematics-green.svg)](https://www.mdpi.com/journal/mathematics)
+[![Paper](https://img.shields.io/badge/paper-Mathematics%2014%283%29%20516-green.svg)](https://doi.org/10.3390/math14030516)
 
-Official implementation of **"Probabilistic Safety Guarantees for Learned Control Barrier Functions: Theory and Application to Multi-Objective Human-Robot Collaborative Optimization"** (Mathematics, MDPI, 2026).
+Official implementation of **"Probabilistic Safety Guarantees for Learned Control Barrier Functions: Theory and Application to Multi-Objective Human-Robot Collaborative Optimization"** (*Mathematics* **2026**, *14*(3), 516; https://doi.org/10.3390/math14030516).
 
 ---
 
@@ -355,12 +355,12 @@ If you use this code in your research, please cite:
   title={Probabilistic Safety Guarantees for Learned Control Barrier Functions: Theory and Application to Multi-Objective Human-Robot Collaborative Optimization},
   author={Urrea, Claudio},
   journal={Mathematics},
-  volume={13},
-  number={X},
-  pages={XXX},
+  volume={14},
+  number={3},
+  pages={516},
   year={2026},
   publisher={MDPI},
-  doi={10.3390/mathXXXXXXXX}
+  doi={10.3390/math14030516}
 }
 ```
 
@@ -412,7 +412,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Paper (MDPI Mathematics)](https://www.mdpi.com/journal/mathematics)
+- [Paper (MDPI Mathematics)](https://doi.org/10.3390/math14030516)
 - [Universidad de Santiago de Chile](https://www.usach.cl/)
 - [Department Website](https://www.ingenieria.usach.cl/)
 
